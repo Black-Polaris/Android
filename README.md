@@ -1,5 +1,5 @@
 # 学生成绩管理系统+图灵机器人课程设计（连接SqlServer数据库，图灵聊天机器人）
-使用到通过android studio连接SqlServer
+通过android studio连接SqlServer
 
 通过图灵官网接口，实现聊天机器人功能
 #
