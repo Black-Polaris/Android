@@ -1,0 +1,13 @@
+# 学生成绩管理系统+图灵机器人课程设计（连接SqlServer数据库，图灵聊天机器人）
+使用到通过android studio连接SqlServer
+
+通过图灵官网接口，实现聊天机器人功能
+#
+这是本人的一个课程设计，小白一个，功能也较为简单，是连接本地数据库通过安卓来实现对数据库进行增删改查等操作，记录一下自己的学习过程。
+
+在代码中的config.class中需要将key修改为你自己在图灵官网中申请的key
+
+同时在其他的class文件中有使用到SqlHelper类的对象需要将其localhost修改为你电脑中的域名
+
+另外MainActivity中的变量connStr也需要将其localhost修改为你电脑中的域名
+
