@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    android:background="#eff2f6"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eff2f6"
+        >
+        <Button
+            android:id="@+id/addStuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_up"
+            android:layout_marginLeft="10dp"
+            android:text="添加学生"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/selectStuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_up"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:text="查询学生信息"
+            android:textSize="15dp"/>
+        <Button
+            android:id="@+id/stuRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_up"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="刷新"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:background="#eff2f6">
+
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="160dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:background="#eff2f6"
+            android:paddingLeft="5dp"
+            android:text="请选择查询类型：" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/rbtnDefault"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtnDefault"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认排序" />
+
+            <RadioButton
+                android:id="@+id/asc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="升序" />
+
+            <RadioButton
+                android:id="@+id/desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="降序" />
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#eff2f6">
+
+        <EditText
+            android:id="@+id/searchStu"
+            android:layout_width="250dp"
+            android:layout_height="40sp"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:hint="请选择类型后输入对应信息："
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="19sp"/>
+
+        <Button
+            android:id="@+id/searchStuBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dialog_up"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="查询"
+            android:textSize="15dp"
+            android:layout_centerVertical="true"/>
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:numColumns="1"
+        android:verticalSpacing="15dp"></ListView>
+</LinearLayout>

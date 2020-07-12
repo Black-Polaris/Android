@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加用户"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/addID"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        android:hint="输入账号："
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/addUsername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        android:hint="输入用户名："
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/addPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        android:hint="输入密码："
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/addType"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="20dp"
+        android:background="#fff"
+        android:hint="输入用户类型：1-老师；2-学生"
+        android:paddingLeft="10dip"
+        android:singleLine="true"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/addClear"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:background="#000"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="重置"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addRegister"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:background="#000"
+            android:gravity="center"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:text="注册添加"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
